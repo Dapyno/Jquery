@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>To-Do List</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="card">
+    <h1>To-Do List</h1>
+    <div class="input-area">
+      <input id="task" placeholder="Tulis tugasmu..." />
+      <button class="btn" id="add">Tambah</button>
+    </div>
+    <ul id="list"></ul>
+
+    <div class="controls">
+      <button class="small" id="clearDone">Hapus Selesai</button>
+      <button class="small" id="clearAll">Hapus Semua</button>
+    </div>
+    <div class="hint">Teg: klik teks tugas untuk menandai selesai. Disimpan otomatis.</div>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>

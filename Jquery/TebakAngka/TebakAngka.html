@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Game Tebak Angka</title>
+<link rel="stylesheet" href="Style.css"/>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <div class="card">
+    <h1>Tebak Angka 🎯</h1>
+    <p class="info">Tebak angka antara <strong>1</strong> sampai <strong>100</strong></p>
+    <div>
+      <input id="guess" type="number" min="1" max="100" placeholder="Masukkan tebakan..."/>
+      <button id="submit">Tebak</button>
+    </div>
+    <div class="status" id="status">Ayo tebak!</div>
+    <div class="info">Sisa percobaan: <span id="tries">10</span></div>
+    <ul class="history" id="history"></ul>
+    <div style="margin-top:12px;">
+      <button id="reset" class="reset-btn">Mulai Ulang</button>
+    </div>
+  </div>
+<script src="Script.js"></script>
+</body>
+</html>

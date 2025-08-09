@@ -1,0 +1,120 @@
+:root {
+  --bg1: #a8edea;
+  --bg2: #fed6e3; 
+  --accent: #00b894;
+  --accent2: #0984e3;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--bg1), var(--bg2));
+  font-family: Inter, system-ui, Arial;
+}
+
+.card {
+  width: 380px;
+  background: #fff;
+  border-radius: 14px;
+  padding: 18px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  transform: translateY(-10px);
+}
+
+h1 {
+  margin: 0 0 12px;
+  font-size: 20px;
+  color: var(--accent);
+  text-align: center;
+}
+
+.input-area {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+input#task {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #f1f1f1;
+  outline: none;
+  transition: box-shadow .15s;
+}
+
+input#task:focus {
+  box-shadow: 0 4px 14px rgba(0, 184, 148, 0.15);
+  border-color: var(--accent);
+}
+
+button.btn {
+  background: linear-gradient(90deg, var(--accent), #55efc4);
+  color: white;
+  border: none;
+  padding: 10px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(0, 184, 148, 0.2);
+}
+
+ul#list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 320px;
+  overflow: auto;
+}
+
+li.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 8px;
+  background: linear-gradient(90deg, #fff, #f7fffe);
+  border-left: 6px solid #ffeaa7;
+}
+
+li.item.done {
+  opacity: .7;
+  text-decoration: line-through;
+  border-left-color: var(--accent2);
+}
+
+.controls {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.small {
+  background: #ffeaa7;
+  border: none;
+  padding: 8px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.delete {
+  background: #ff7675;
+  color: #fff;
+  border: none;
+  padding: 6px 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.hint {
+  font-size: 12px;
+  color: #666;
+  text-align: center;
+  margin-top: 8px;
+}
