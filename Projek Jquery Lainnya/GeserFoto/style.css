@@ -1,0 +1,105 @@
+:root {
+  --warna-gradient1: #f6d365;
+  --warna-gradient2: #fda085;
+  --warna-tombol: #6c5ce7;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', Arial, sans-serif;
+  background: linear-gradient(180deg, var(--warna-gradient1), var(--warna-gradient2));
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bungkus {
+  width: 760px;
+  max-width: 95%;
+}
+
+.judul {
+  text-align: center;
+  color: #2d3436;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.penggeser {
+  position: relative;
+  border-radius: 14px;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+}
+
+.semuaSlide {
+  display: flex;
+  transition: transform 0.6s ease;
+}
+
+.semuaSlide img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.kontrol {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  padding: 14px;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.tombol {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 10px;
+  background: var(--warna-tombol);
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  box-shadow: 0 8px 20px rgba(108, 92, 231, 0.2);
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.tombol:hover {
+  background: #5e54e7;
+  transform: translateY(-2px);
+}
+
+.titik {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px;
+}
+
+.titik div {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #ddd;
+  cursor: pointer;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.titik div.aktif {
+  background: var(--warna-tombol);
+  box-shadow: 0 6px 14px rgba(108, 92, 231, 0.18);
+}
+
+@media (max-width: 700px) {
+  .semuaSlide img {
+    height: 260px;
+  }
+
+  .tombol {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+}
